@@ -1,0 +1,33 @@
+[submodule "claude-mem"]
+	path = claude-mem
+	url = https://github.com/thedotmack/claude-mem.git
+[submodule "gsd-core"]
+	path = gsd-core
+	url = https://github.com/open-gsd/gsd-core.git
+[submodule "Agent-Reach"]
+	path = Agent-Reach
+	url = https://github.com/Panniantong/Agent-Reach.git
+[submodule "no-ai-slop"]
+	path = no-ai-slop
+	url = https://github.com/petergyang/no-ai-slop.git
+[submodule "ppt-master"]
+	path = ppt-master
+	url = https://github.com/hugohe3/ppt-master.git
+[submodule "video-use"]
+	path = video-use
+	url = https://github.com/browser-use/video-use.git
+[submodule "SkillSpector"]
+	path = SkillSpector
+	url = https://github.com/NVIDIA/SkillSpector.git
+[submodule "AI-penetration-testing"]
+	path = AI-penetration-testing
+	url = https://github.com/Mr-Infect/AI-penetration-testing.git
+[submodule "SWE-agent"]
+	path = SWE-agent
+	url = https://github.com/princeton-nlp/SWE-agent.git
+[submodule "huggingface_hub"]
+	path = huggingface_hub
+	url = https://github.com/huggingface/huggingface_hub.git
+[submodule "gpt-researcher"]
+	path = gpt-researcher
+	url = https://github.com/assafelovic/gpt-researcher.git
