@@ -1,0 +1,26 @@
+name: Auto Update Submodules
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # यह हर रविवार रात को ऑटोमैटिक अपडेट करेगा
+  workflow_dispatch: # यह आपको कभी भी बटन दबाकर अपडेट करने की सुविधा देगा
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull latest updates from all 11 projects
+        run: |
+          git submodule update --remote --merge
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -am "टर्बो हाई स्पीड: सभी प्रोजेक्ट्स अपने आप अपडेट हो गए" || echo "कोई नया अपडेट नहीं है"
+          git push
+          
